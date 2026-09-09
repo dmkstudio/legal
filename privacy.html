@@ -179,7 +179,7 @@
     <header>
       <p class="eyebrow">Traffic · Published by dmkstudio</p>
       <h1>Privacy Policy</h1>
-      <p class="meta"><strong>Effective date:</strong> 3 September 2026</p>
+      <p class="meta"><strong>Effective date:</strong> 9 September 2026</p>
     </header>
 
     <main id="main">
@@ -228,17 +228,17 @@
               <tr>
                 <td><strong>Preferences:</strong> sound, music, haptics, reminders, whether the ads-and-privacy question was answered, and the state of the <strong>PERSONALISED ADS</strong> and <strong>DO NOT SELL OR SHARE MY DATA</strong> settings.</td>
                 <td>To remember your choices and apply them on later launches.</td>
-                <td>Saved on your device. When advertising is active, your personalisation choice decides whether Unity Ads is asked for personalised or basic ads.</td>
+                <td>Saved on your device. When advertising is active, your personalisation choice decides whether Google AdMob is asked for personalised or basic ads.</td>
               </tr>
               <tr>
                 <td><strong>Gameplay and shop events:</strong> the event names and limited parameters listed under “Analytics events”.</td>
                 <td>To understand level difficulty, retention, tutorials, the virtual economy, shop reliability, and ad delivery.</td>
-                <td>These events stay on your device or in its local log. Traffic sends them to no remote analytics provider. If we ever add one, we will name it here and update this Policy before any event is sent off the device.</td>
+                <td>Sent to Google Analytics for Firebase, operated by Google, and also written to the Game’s local log. Firebase attaches its own automatically collected data to each event, including an app instance identifier, the device model and operating system, the app version, and the country your IP address indicates.</td>
               </tr>
               <tr>
                 <td><strong>Advertising data:</strong> the device advertising identifier (the Android Advertising ID, or the iOS IDFA where you have allowed tracking), IP address (which can indicate general location), device type and technical device data, app launches, ad requests, impressions, video views, taps and other ad interactions, diagnostic data, and, on Android, the app set ID.</td>
                 <td>To request and measure ads, select basic or personalised ads as permitted, cap frequency, diagnose delivery, and prevent fraud.</td>
-                <td>Sent to Unity Ads, operated by Unity Technologies, when an ad is requested or shown. See “Advertising partners and personalised advertising”.</td>
+                <td>Sent to Google AdMob, operated by Google, when an ad is requested or shown. See “Advertising partners and personalised advertising”.</td>
               </tr>
               <tr>
                 <td><strong>Purchase data:</strong> product ID, transaction status, and the resulting local entitlement or virtual item. Your platform processes account, price, payment method, tax, receipt, and transaction information.</td>
@@ -265,29 +265,31 @@
         </div>
 
         <p>Traffic reads a device identifier locally to create a default pseudonymous driver callsign. The raw identifier is not deliberately included in Traffic’s analytics events or leaderboard score metadata. Do not use your real name as a driver callsign.</p>
+        <p>When the Game stops unexpectedly, Firebase Crashlytics sends a crash report to Google: the stack of the failure, the device model and operating system, the app version, the time, and an installation identifier. It is used to find and fix the fault.</p>
         <p>Traffic does not ask for precise location, contacts, photos, camera, microphone, phone number, or government identifiers. General location may still be inferred by an advertising provider from an IP address.</p>
       </section>
 
       <section aria-labelledby="analytics">
         <h2 id="analytics">Analytics events</h2>
-        <p>The release analytics schema contains the following events. Parameters are limited to level and chapter numbers; session duration and levels played; moves and boosters used; loss reason; coin source, destination, amount and balance; shop origin and product ID; stable error codes; ad placement; and tutorial lesson and step. It does not intentionally include a name, email address, free text, precise location, raw advertising ID, IP address, device model, board seed, or every individual tap.</p>
+        <p>The release analytics schema contains the following events. Parameters are limited to level and chapter numbers; session duration and levels played; moves and boosters used; loss reason; coin source, destination, amount and balance; shop origin and product ID; stable error codes; ad placement; and tutorial lesson and step. Our own parameters do not include a name, email address, free text, precise location, raw advertising ID, IP address, board seed, or every individual tap; the device model, operating system and country come from Firebase’s automatic collection, described above.</p>
         <details>
           <summary>Show all 26 event names</summary>
           <p><code>session_started</code>, <code>session_ended</code>, <code>level_started</code>, <code>level_won</code>, <code>level_lost</code>, <code>level_abandoned</code>, <code>coins_earned</code>, <code>coins_spent</code>, <code>shop_opened</code>, <code>shop_product_shown</code>, <code>shop_product_tapped</code>, <code>shop_purchase_started</code>, <code>shop_purchase_succeeded</code>, <code>shop_purchase_cancelled</code>, <code>shop_purchase_failed</code>, <code>shop_restore_started</code>, <code>shop_restore_succeeded</code>, <code>shop_restore_nothing_to_restore</code>, <code>shop_restore_failed</code>, <code>ad_offered</code>, <code>ad_shown</code>, <code>ad_reward_granted</code>, <code>ad_no_fill</code>, <code>tutorial_step_shown</code>, <code>tutorial_step_completed</code>, and <code>tutorial_abandoned</code>.</p>
         </details>
-        <p>These events stay on the device. Unity Ads separately collects its own ad-request, impression, and diagnostic events, as described in its policy and in the table above.</p>
+        <p>These events are sent to Google Analytics for Firebase and are also written to the Game’s local log. Google AdMob separately collects its own ad-request, impression, and diagnostic events, as described in its policy and in the table above.</p>
       </section>
 
       <section aria-labelledby="partners">
         <h2 id="partners">Partners and disclosures</h2>
         <p>We disclose only the data needed for the service involved. These providers process data under their own terms and privacy policies:</p>
         <ul>
-          <li><strong>Unity Ads (Unity Technologies):</strong> ad delivery, measurement, diagnostics, frequency capping, and fraud prevention. See Unity’s Game Player and App User Privacy Policy: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">https://unity.com/legal/game-player-and-app-user-privacy-policy</a>.</li>
+          <li><strong>Google AdMob (Google):</strong> ad delivery, measurement, diagnostics, frequency capping, and fraud prevention. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>.</li>
+          <li><strong>Google Analytics for Firebase and Firebase Crashlytics (Google):</strong> game analytics and crash diagnostics. See the <a href="https://firebase.google.com/support/privacy">Firebase privacy notice</a>.</li>
           <li><strong>Google Play:</strong> Android distribution, in-app billing, purchase restoration, and platform services. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</li>
           <li><strong>Apple App Store:</strong> iOS distribution, in-app billing, purchase restoration, and platform services. See <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</li>
           <li><strong>Unity Gaming Services Authentication and Leaderboards, when enabled:</strong> anonymous sign-in and rankings. See <a href="https://unity.com/legal/privacy-policy">Unity’s Privacy Policy</a>.</li>
         </ul>
-        <p>Traffic uses Unity Ads directly and has selected no advertising mediation partner. If we add a mediation or remote analytics provider, we will update this list before that provider starts receiving data.</p>
+        <p>Traffic uses Google AdMob directly and has selected no advertising mediation partner. If we add a mediation partner or a further analytics provider, we will update this list before that provider starts receiving data.</p>
       </section>
 
       <section aria-labelledby="bases">
@@ -303,9 +305,9 @@
 
       <section aria-labelledby="ads">
         <h2 id="ads">Advertising partners and personalised advertising</h2>
-        <p>Traffic is free to play and uses Unity Ads, operated by Unity Technologies, for interstitial and optional rewarded ads. When an ad is requested or shown, Unity receives the device advertising identifier where your platform settings allow it, your IP address, the device type, and events about the ad — that it was requested, shown, watched, or closed — and uses them to select and measure ads, cap how often you see them, diagnose delivery, and prevent fraud. Basic ads use context such as the Game and the general location an IP address indicates. Personalised ads may also use the advertising identifier and past activity to infer interests, where the law and your platform settings allow it.</p>
+        <p>Traffic is free to play and uses Google AdMob, operated by Google, for interstitial and optional rewarded ads. When an ad is requested or shown, Google receives the device advertising identifier where your platform settings allow it, your IP address, the device type, and events about the ad — that it was requested, shown, watched, or closed — and uses them to select and measure ads, cap how often you see them, diagnose delivery, and prevent fraud. Basic ads use context such as the Game and the general location an IP address indicates. Personalised ads may also use the advertising identifier and past activity to infer interests, where the law and your platform settings allow it.</p>
         <p>On first launch, Traffic asks on its own consent screen whether ads may be personalised; it uses no third-party consent platform. Refusing does not block the Game; it selects basic ads. To withdraw or change your consent later, open the Game’s Settings and turn <strong>PERSONALISED ADS</strong> off or on. Turning it off applies to future ad requests. You can also limit app tracking or reset or delete the advertising identifier in your Android or iOS privacy settings.</p>
-        <p>Ads are shown only in a build where the Unity Ads network is configured. Until it is — as in development builds, which use a no-network placeholder — Traffic requests no ad, and none of the advertising data described above leaves your device.</p>
+        <p>Ads are shown only in a build where the ad network is configured. In a build without it, Traffic requests no ad, and none of the advertising data described above leaves your device.</p>
       </section>
 
       <section aria-labelledby="purchases">
@@ -345,7 +347,8 @@
         <h3>Retention periods</h3>
         <ul>
           <li>Local progress and settings: until you clear app data or uninstall.</li>
-          <li>In-memory analytics: until the app process ends, subject to a 256-event capacity. A local debug analytics file, if enabled, remains until app data is cleared or the Game is uninstalled.</li>
+          <li>Analytics events and crash reports held by Google: retained under our Firebase project settings and no longer than 24 months after your last activity.</li>
+          <li>In-memory analytics on the device: until the app process ends, subject to a 256-event capacity. A local debug analytics file, if enabled, remains until app data is cleared or the Game is uninstalled.</li>
           <li>Leaderboard and any other dmkstudio-controlled server records: no longer than <strong>24 months</strong> after the last activity, unless you request earlier deletion or law requires longer retention.</li>
           <li>Purchase, advertising, and platform records: retained by Google, Apple, or Unity under their own policies and legal obligations.</li>
           <li>Support correspondence: only as long as needed to resolve the request, document the response, prevent abuse, or meet legal duties.</li>
