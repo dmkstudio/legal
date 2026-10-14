@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Open-source software and font licences used in the Traffic mobile game, published by dmkstudio.">
+  <title>Traffic Licences — dmkstudio</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f4f2ea;
+      --surface: #fffdf7;
+      --text: #20242b;
+      --muted: #626a76;
+      --border: #d9d5c8;
+      --accent: #1769aa;
+      --accent-strong: #0d4d80;
+      --focus: #f0a51a;
+      --notice: #edf5fb;
+      --notice-border: #9ac5e4;
+      --shadow: 0 12px 36px rgba(32, 36, 43, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #11161c;
+        --surface: #19212a;
+        --text: #eef2f6;
+        --muted: #b2bdc8;
+        --border: #34414e;
+        --accent: #79bdf0;
+        --accent-strong: #a8d7f7;
+        --focus: #ffc55c;
+        --notice: #172b3a;
+        --notice-border: #386d91;
+        --shadow: 0 12px 36px rgba(0, 0, 0, 0.28);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 0.18em;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover { color: var(--accent-strong); }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 4px;
+      border-radius: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      padding: 0.7rem 1rem;
+      background: var(--surface);
+      color: var(--text);
+      transform: translateY(-120%);
+      z-index: 1;
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .page {
+      width: min(100% - 2rem, 720px);
+      margin: 2rem auto;
+      padding: clamp(1.25rem, 4vw, 3.25rem);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    header { padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+
+    .eyebrow {
+      margin: 0 0 0.35rem;
+      color: var(--accent-strong);
+      font-size: 0.85rem;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 { line-height: 1.2; text-wrap: balance; }
+    h1 { margin: 0; font-size: clamp(2rem, 8vw, 3.2rem); }
+    h2 { margin: 2.75rem 0 0.8rem; font-size: clamp(1.45rem, 5vw, 1.85rem); }
+    h3 { margin: 1.75rem 0 0.55rem; font-size: 1.1rem; }
+    p, ul { margin-top: 0.7rem; }
+    li + li { margin-top: 0.45rem; }
+
+    .meta { margin: 0.65rem 0 0; color: var(--muted); }
+
+    .notice {
+      margin: 1.5rem 0;
+      padding: 1rem 1.1rem;
+      background: var(--notice);
+      border: 1px solid var(--notice-border);
+      border-radius: 12px;
+    }
+
+    nav ul {
+      margin: 0.8rem 0 0;
+      padding-left: 1.2rem;
+      columns: 2;
+      column-gap: 2rem;
+    }
+
+    nav li { break-inside: avoid; }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    @media (max-width: 560px) {
+      .page { width: 100%; margin: 0; border: 0; border-radius: 0; box-shadow: none; }
+      nav ul { columns: 1; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the licences</a>
+  <div class="page">
+    <header>
+      <p class="eyebrow">Traffic · Published by dmkstudio</p>
+      <h1>Licences</h1>
+      <p class="meta"><strong>Updated:</strong> 14 October 2026</p>
+    </header>
+
+    <main id="main">
+      <section aria-labelledby="intro">
+        <h2 id="intro">Third-party software and fonts</h2>
+        <p>Traffic is built with the Unity engine and Unity packages, used under Unity Technologies’ own terms. It also includes the open-source software and fonts listed below. Their licences ask that these notices travel with the game, and the full licence texts follow the lists.</p>
+        <p>The Google Mobile Ads SDK and the User Messaging Platform SDK themselves are provided by Google under Google’s own terms.</p>
+      </section>
+
+      <section aria-labelledby="software">
+        <h2 id="software">Software</h2>
+        <ul>
+          <li><strong>Firebase Unity SDK (Analytics, Crashlytics)</strong> — Copyright Google LLC. Apache License 2.0.</li>
+          <li><strong>Firebase Apple SDK (iOS)</strong> — Copyright Google LLC. Apache License 2.0.</li>
+          <li><strong>Google Mobile Ads Unity Plugin</strong> — Copyright Google LLC. Apache License 2.0.</li>
+          <li><strong>Google Play Billing Library (Android)</strong> — Copyright 2023 Google LLC. Apache License 2.0.</li>
+          <li><strong>Newtonsoft.Json</strong> — Copyright (c) 2007 James Newton-King. MIT License.</li>
+          <li><strong>Json.Net.Unity3D</strong> — Copyright (c) 2016 SaladLab. MIT License.</li>
+          <li><strong>Newtonsoft.Json-for-Unity</strong> — Copyright (c) 2019 Kalle Jillheden. MIT License.</li>
+          <li><strong>com.newtonsoft.json</strong> — Copyright (c) 2019 Mike Wuetherick. MIT License.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="fonts">
+        <h2 id="fonts">Fonts</h2>
+        <ul>
+          <li><strong>Grandstander</strong> — Copyright 2020 The Grandstander Project Authors (https://github.com/Etcetera-Type-Co/Grandstander). SIL Open Font License 1.1.</li>
+          <li><strong>Nunito Sans</strong> — Copyright 2016 The Nunito Sans Project Authors (https://github.com/Fonthausen/NunitoSans). SIL Open Font License 1.1.</li>
+          <li><strong>Liberation Sans</strong> — Digitized data copyright (c) 2010 Google Corporation, with Reserved Font Arimo, Tinos and Cousine. Copyright (c) 2012 Red Hat, Inc., with Reserved Font Name Liberation. SIL Open Font License 1.1.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="apache">
+        <h2 id="apache">Apache License 2.0</h2>
+        <p>Apache License Version 2.0, January 2004 http://www.apache.org/licenses/</p>
+        <p>TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION</p>
+        <p>1. Definitions.</p>
+        <p>&quot;License&quot; shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.</p>
+        <p>&quot;Licensor&quot; shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.</p>
+        <p>&quot;Legal Entity&quot; shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, &quot;control&quot; means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.</p>
+        <p>&quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity exercising permissions granted by this License.</p>
+        <p>&quot;Source&quot; form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.</p>
+        <p>&quot;Object&quot; form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.</p>
+        <p>&quot;Work&quot; shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).</p>
+        <p>&quot;Derivative Works&quot; shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.</p>
+        <p>&quot;Contribution&quot; shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, &quot;submitted&quot; means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as &quot;Not a Contribution.&quot;</p>
+        <p>&quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.</p>
+        <p>2. Grant of Copyright License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.</p>
+        <p>3. Grant of Patent License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.</p>
+        <p>4. Redistribution. You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:</p>
+        <p>(a) You must give any other recipients of the Work or Derivative Works a copy of this License; and</p>
+        <p>(b) You must cause any modified files to carry prominent notices stating that You changed the files; and</p>
+        <p>(c) You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and</p>
+        <p>(d) If the Work includes a &quot;NOTICE&quot; text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.</p>
+        <p>You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.</p>
+        <p>5. Submission of Contributions. Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.</p>
+        <p>6. Trademarks. This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.</p>
+        <p>7. Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.</p>
+        <p>8. Limitation of Liability. In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.</p>
+        <p>9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.</p>
+        <p>END OF TERMS AND CONDITIONS</p>
+      </section>
+
+      <section aria-labelledby="mit">
+        <h2 id="mit">MIT License</h2>
+        <p>The copyright notices for the MIT-licensed components are listed above.</p>
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+        <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+        <p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+
+      <section aria-labelledby="ofl">
+        <h2 id="ofl">SIL Open Font License 1.1</h2>
+        <p>The copyright notices and reserved font names for each font are listed above.</p>
+        <p>SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007</p>
+        <p>PREAMBLE</p>
+        <p>The goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership with others.</p>
+        <p>The OFL allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. The fonts, including any derivative works, can be bundled, embedded, redistributed and/or sold with any software provided that any reserved names are not used by derivative works. The fonts and derivatives, however, cannot be released under any other type of license. The requirement for fonts to remain under this license does not apply to any document created using the fonts or their derivatives.</p>
+        <p>DEFINITIONS</p>
+        <p>&quot;Font Software&quot; refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation.</p>
+        <p>&quot;Reserved Font Name&quot; refers to any names specified as such after the copyright statement(s).</p>
+        <p>&quot;Original Version&quot; refers to the collection of Font Software components as distributed by the Copyright Holder(s).</p>
+        <p>&quot;Modified Version&quot; refers to any derivative made by adding to, deleting, or substituting -- in part or in whole -- any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.</p>
+        <p>&quot;Author&quot; refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.</p>
+        <p>PERMISSION &amp; CONDITIONS</p>
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:</p>
+        <p>1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.</p>
+        <p>2) Original or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.</p>
+        <p>3) No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as presented to the users.</p>
+        <p>4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written permission.</p>
+        <p>5) The Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.</p>
+        <p>TERMINATION</p>
+        <p>This license becomes null and void if any of the above conditions are not met.</p>
+        <p>DISCLAIMER</p>
+        <p>THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Also read the <a href="privacy.html">Traffic Privacy Policy</a> and the <a href="terms.html">Terms of Use</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>
